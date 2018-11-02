@@ -1,0 +1,53 @@
+body {
+    background-color: rgba(0,200,10,0.2);
+    font-family: sans;
+} 
+h1 {
+    color: red;
+    text-shadow: 3px 2px 5px rgba(128,0,0,0.3);
+    text-align: center;
+}
+#graphe {
+    background-color: rgba(100,80,0,0.2); 
+    border-spacing: 0; 
+    box-shadow: 6px 4px 10px rgba(0,0,0,0.2);
+}
+#graphe td {
+    width: 64 px;
+    min-width: 64px;
+    height: 64px;
+}
+.sommet {
+    border: 2px solid brown;
+    background-color: lightgreen;
+    border-radius: 14%;
+    cursor: pointer;
+}
+
+.est, .nord, .ne, .nw {
+    cursor: url('../img/titang.png'), pointer;
+}
+
+.est {
+    background-image: url('../img/est.svg');
+}
+.nord {
+    background-image: url('../img/nord.svg');
+}
+.ne {
+    background-image: url('../img/ne.svg');
+    background-repeat: no-repeat;
+}
+.nw {
+    background-image: url('../img/nw.svg');
+    background-repeat: no-repeat;
+}
+
+.tang {
+    background-image: url('../img/tang.gif');
+    background-repeat: no-repeat;
+}
+.dog {
+    background-image: url('../img/chien.gif');
+    background-repeat: no-repeat;
+}
