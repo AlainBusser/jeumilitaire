@@ -7,9 +7,20 @@ h1 {
     text-shadow: 3px 2px 5px rgba(128,0,0,0.3);
     text-align: center;
 }
+h3 {
+    color: darkred;
+}
+
+footer {
+    text-align: right;
+    font-size: 0.6em;
+}
 #graphe {
     background-color: rgba(100,80,0,0.2); 
+    background-image: url('../img/fond.svg');
     border-spacing: 0; 
+    border-radius: 16px;
+    padding: 20px;
     box-shadow: 6px 4px 10px rgba(0,0,0,0.2);
 }
 #graphe td {
@@ -17,35 +28,37 @@ h1 {
     min-width: 64px;
     height: 64px;
 }
+.regle {
+    background-color: rgba(200,180,100,0.6);
+    border-radius: 16px;
+    padding: 20px;
+    width: 360px;
+    float: right;
+    box-shadow: 6px 4px 10px rgba(0,0,0,0.2);
+}
 .sommet {
     border: 2px solid brown;
     background-color: lightgreen;
-    border-radius: 14%;
+    border-radius: 50%;
     cursor: pointer;
 }
 
 .est, .nord, .ne, .nw {
+    width: 64px;
+    height: 64px;
+    min-width: 64px;
     cursor: url('../img/titang.png'), pointer;
 }
 
-.est {
-    background-image: url('../img/est.svg');
-}
-.nord {
-    background-image: url('../img/nord.svg');
-}
-.ne {
-    background-image: url('../img/ne.svg');
-    background-repeat: no-repeat;
-}
-.nw {
-    background-image: url('../img/nw.svg');
-    background-repeat: no-repeat;
+#dessinJ {
+    width: 60px;
+    height: 60px;
 }
 
 .tang {
     background-image: url('../img/tang.gif');
     background-repeat: no-repeat;
+%    background-size: 64%;
 }
 .dog {
     background-image: url('../img/chien.gif');

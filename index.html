@@ -5,19 +5,45 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/graphe.css">
         <script src="js/jquery.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery.ui.touch-punch.min.js"></script>
+        <script src="js/militaire.js"></script>
   </head>
   <body>
       <h1>Chiens et tangue</h1>
+      <div class="regle">
+          <h3>Règle du jeu</h3>
+          <p>
+              L'un des joueurs fait bouger le tangue, puis 
+              passe la tablette à l'autre joueur qui fait alors 
+              bouger un des chiens, et ainsi de suite.
+          </p>
+          <p>Pour bouger, le tangue et les chiens doivent passer 
+          par un chemin marron, depuis leur place actuelle, vers 
+          l'autre place qui borde ce chemin.</p>
+          <ul>
+              <li><span><img src="img/titang.png"></span> Le tangue peut 
+              aller dans n'importe quelle direction du moment que 
+              c'est en suivant un seul chemin et pas vers une place occupée.</li>
+              <li><span><img src="img/tichien.png"></span> Les chiens n'ont 
+              pas le droit de reculer; ils ne peuvent aller que 
+              vers l'avant (le haut de l'écran) ou sur le côté.</li>
+              <li><span><img src="img/tichien.png"></span> Lorsque c'est au tour du joueur «chiens» de 
+              jouer, il choisit lequel des chiens va avancer. Il 
+              ne bouge qu'un seul chien, après c'est au tangue de jouer.</li>
+          </ul>
+      </div>
+      <h3>C'est au joueur <img id="dessinJ" class="tang"></img> <span class="quijoue">tangue</span> de jouer</h3>
       <table id="graphe">
-          <tr><td></td><td></td><td class="sommet"></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td class="sommet" id="c4"></td><td></td><td></td></tr>
           <tr><td></td><td class="ne"></td><td class="nord"></td><td class="nw"></td><td></td></tr>
-          <tr><td class="sommet"></td><td class="est"></td><td class="sommet"></td><td class="est"></td><td class="sommet"></td></tr>
+          <tr><td class="sommet" id="g3"></td><td class="est"></td><td class="sommet" id="c3"></td><td class="est"></td><td class="sommet" id="d3"></td></tr>
           <tr><td class="nord"></td><td class="nw"></td><td class="nord"></td><td class="ne"></td><td class="nord"></td></tr>
-          <tr><td class="sommet"></td><td class="est"></td><td class="sommet"></td><td class="est"></td><td class="sommet"></td></tr>
+          <tr><td class="sommet" id="g2"></td><td class="est"></td><td class="sommet" id="c2"></td><td class="est"></td><td class="sommet" id="d2"></td></tr>
           <tr><td class="nord"></td><td class="ne"></td><td class="nord"></td><td class="nw"></td><td class="nord"></td></tr>
-          <tr><td class="sommet dog"></td><td class="est"></td><td class="sommet tang"></td><td class="est"></td><td class="sommet dog"></td></tr>
+          <tr><td class="sommet dog" id="g1"></td><td class="est"></td><td class="sommet tang" id="c1"></td><td class="est"></td><td class="sommet dog" id="d1"></td></tr>
           <tr><td></td><td class="nw"></td><td class="nord"></td><td class="ne"></td><td></td></tr>
-          <tr><td></td><td></td><td class="sommet dog"></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td class="sommet dog" id="c0"></td><td></td><td></td></tr>
       </table>
       <footer>© I.R.E.M. La Réunion 2018</footer>
   </body>
