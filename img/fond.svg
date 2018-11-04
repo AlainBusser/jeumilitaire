@@ -6,7 +6,7 @@
 <line x1="54" y1="180" x2="326" y2="180" style="stroke: brown; stroke-width: 12px;"/> 
 <line x1="54" y1="436" x2="326" y2="436" style="stroke: brown; stroke-width: 12px;"/> 
 <line x1="54" y1="308" x2="326" y2="308" style="stroke: brown; stroke-width: 12px;"/> 
-<line x1="54" y1="180" x2="326" y2="436" style="stroke: brown; stroke-width: 16px;"/> 
+<line x1="54" y1="180" x2="326" y2="436" style="stroke: brown; stroke-width: 12px;"/> 
 <line x1="326" y1="180" x2="54" y2="436" style="stroke: brown; stroke-width: 12px;"/> 
 <line x1="190" y1="48" x2="52" y2="186" style="stroke: brown; stroke-width: 12px;"/> 
 <line x1="190" y1="48" x2="326" y2="186" style="stroke: brown; stroke-width: 12px;"/> 
